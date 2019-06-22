@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9375d386-4904-4892-a93a-bc64a9f33e49" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/CustomerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Dao/CustomerDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DataAccess/CustomerDataAccess.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Service/CustomerService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/CategoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Dao/CategoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Dao/CategoryDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DataAccess/CategoryDataAccess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DataAccess/CategoryDataAccess.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Service/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Service/CategoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Service/CustomerService.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -39,15 +29,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/DataAccess/CustomerDataAccess.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+            <state relative-caret-position="-296">
+              <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#357#358#0" expanded="true" />
                 <element signature="e#394#395#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Service/CustomerService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="629">
+              <caret line="39" column="20" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#356#357#0" expanded="true" />
+                <element signature="e#402#403#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Controller/CustomerController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="146">
+              <caret line="31" column="50" selection-start-line="31" selection-start-column="50" selection-end-line="31" selection-end-column="50" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -113,8 +129,8 @@
         <option value="$PROJECT_DIR$/src/main/java/Model/Customer.java" />
         <option value="$PROJECT_DIR$/src/main/java/Controller/CustomerController.java" />
         <option value="$PROJECT_DIR$/src/main/java/Dao/CustomerDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Service/CustomerService.java" />
         <option value="$PROJECT_DIR$/src/main/java/DataAccess/CustomerDataAccess.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Service/CustomerService.java" />
       </list>
     </option>
   </component>
@@ -230,7 +246,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561231172691" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561231334980" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Java/lib/mysql-connector-java-8.0.16.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -279,7 +295,7 @@
       <workItem from="1560435017756" duration="9207000" />
       <workItem from="1560978328616" duration="22322000" />
       <workItem from="1561140469646" duration="22000" />
-      <workItem from="1561220448378" duration="9129000" />
+      <workItem from="1561220448378" duration="9299000" />
     </task>
     <task id="LOCAL-00001" summary="Information Update">
       <created>1561221458910</created>
@@ -295,11 +311,25 @@
       <option name="project" value="LOCAL" />
       <updated>1561221686116</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Information Update">
+      <created>1561231186219</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1561231186219</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Information Update">
+      <created>1561231198632</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1561231198632</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40680000" />
+    <option name="totallyTimeSpent" value="40850000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -858,19 +888,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Service/CustomerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="15" column="54" lean-forward="true" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#375#376#0" expanded="true" />
-            <element signature="e#1238#1239#0" expanded="true" />
-            <element signature="e#1263#1264#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Dao/CustomerDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -891,9 +908,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/DataAccess/CustomerDataAccess.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-296">
+          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#357#358#0" expanded="true" />
+            <element signature="e#394#395#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Controller/CustomerController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
+        <state relative-caret-position="146">
           <caret line="31" column="50" selection-start-line="31" selection-start-column="50" selection-end-line="31" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -901,14 +930,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/DataAccess/CustomerDataAccess.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Service/CustomerService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="26" column="13" lean-forward="true" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        <state relative-caret-position="629">
+          <caret line="39" column="20" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#357#358#0" expanded="true" />
-            <element signature="e#394#395#0" expanded="true" />
+            <element signature="e#356#357#0" expanded="true" />
+            <element signature="e#402#403#0" expanded="true" />
           </folding>
         </state>
       </provider>

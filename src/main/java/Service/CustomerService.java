@@ -33,7 +33,11 @@ public class CustomerService {
 
     public Customer loginCustomer (String email, String password) {
         HashMap<String, String> creds = customerDao.getCustomerLoginInfo(email);
-        return getCustomer(Integer.valueOf(creds.get("customer_id")));
+
+        if (password.equals(creds.get("password"))) {
+            return getCustomer(Integer.valueOf(creds.get("customer_id")));
+        }
+        return null;
     }
 
     public Customer loginFacebookCustomer (String token) {
