@@ -26,7 +26,7 @@ This is my first project I am commiting to github, on here I am creating a backe
 		 - I was trying to figure out how to return the propper object that would match the desired output
 		 - Tested out all of the endpoints to make sure I was getting desired response
 		 - I was able to fix this by changing this:
-```
+```java
 public List<Product> getAllProducts(int page, int limit, int descLength) {
         page = page -1;
         if (page > 0) {page = (page * limit);}
