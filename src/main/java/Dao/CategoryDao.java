@@ -14,4 +14,5 @@ public interface CategoryDao {
 
     List<Category> getCategoriesOfDepartment(int departmentId);
 
+    Integer getCategoryCount();
 }

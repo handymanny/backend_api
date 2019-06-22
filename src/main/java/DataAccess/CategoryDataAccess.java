@@ -63,4 +63,10 @@ public class CategoryDataAccess implements CategoryDao {
             return new Category(categoryId, departmentId, name, desc);
         });
     }
+
+    @Override
+    public Integer getCategoryCount() {
+        final String sql = "{CALL catalog_count_categories_on_catalog()}";
+        return jdbcTemplate.queryForObject(sql, (resultSet, i) -> Integer.valueOf(resultSet.getString("categories_on_catalog_count")));
+    }
 }

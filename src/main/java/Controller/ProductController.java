@@ -31,12 +31,12 @@ public class ProductController {
     }
 
     @RequestMapping(value = "/search", method = RequestMethod.GET)
-    public List<Product> searchProducts(@RequestParam("query_string") String query,
+    public ResponseEntity<Object> searchProducts(@RequestParam("query_string") String query,
                                         @RequestParam(required = false, defaultValue = "on") String allWords,
                                         @RequestParam(required = false, defaultValue = "1") Integer page,
                                         @RequestParam(required = false, defaultValue = "20") Integer limit,
                                         @RequestParam(required = false, defaultValue = "200") Integer descLength){
-        return productService.searchProducts(query, allWords, page, limit, descLength);
+        return new ResponseEntity<>(productService.searchProducts(query, allWords, page, limit, descLength), HttpStatus.OK);
     }
 
 
@@ -47,20 +47,20 @@ public class ProductController {
 
 
     @RequestMapping(value = "/inCategory/{id}", method = RequestMethod.GET)
-    public List<Product> getProductsInCategory(@PathVariable("id") Integer categoryId,
+    public ResponseEntity<Object> getProductsInCategory(@PathVariable("id") Integer categoryId,
                                                @RequestParam(required = false, defaultValue = "1") Integer page,
                                                @RequestParam(required = false, defaultValue = "20") Integer limit,
                                                @RequestParam(required = false, defaultValue = "200") Integer descLength) {
-     return productService.getProductsInCategory(categoryId, page, limit, descLength);
+     return new ResponseEntity<>(productService.getProductsInCategory(categoryId, page, limit, descLength), HttpStatus.OK);
     }
 
 
     @RequestMapping(value = "/inDepartment/{id}", method = RequestMethod.GET)
-    public List<Product> getProductsInDepartment(@PathVariable("id") Integer departmentId,
+    public ResponseEntity<Object> getProductsInDepartment(@PathVariable("id") Integer departmentId,
                                                  @RequestParam(required = false, defaultValue = "1") Integer page,
                                                  @RequestParam(required = false, defaultValue = "20") Integer limit,
                                                  @RequestParam(required = false, defaultValue = "200") Integer descLength) {
-        return productService.getProductsInDepartment(departmentId, page, limit, descLength);
+        return new ResponseEntity<>(productService.getProductsInDepartment(departmentId, page, limit, descLength), HttpStatus.OK);
     }
 
 

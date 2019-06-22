@@ -4,6 +4,8 @@ package Controller;
 import Model.Category;
 import Service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -20,10 +22,10 @@ public class CategoryController {
     }
 
     @RequestMapping(value = "", method = RequestMethod.GET)
-    public List<Category> getAllCategories(@RequestParam(required = false) String order,
+    public ResponseEntity<Object> getAllCategories(@RequestParam(required = false) String order,
                                            @RequestParam(required = false) int page,
                                            @RequestParam(required = false) int limit) {
-        return categoryService.getAllCategories(order, page, limit);
+        return new ResponseEntity<>(categoryService.getAllCategories(order, page, limit), HttpStatus.OK);
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)

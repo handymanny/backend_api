@@ -31,29 +31,42 @@ public class ProductService {
 
         List<Product> products = productDao.getAllProducts(page, limit, descLength);
         Integer count = getProductCount();
+
         return convertObjects(products, count);
     }
 
-    public List<Product> searchProducts(String query, String allWords, int page, int limit, int descLength) {
+    public String searchProducts(String query, String allWords, int page, int limit, int descLength) {
         page = page -1;
         if (page > 0) {page = (page * limit);}
-        return  productDao.searchProducts(query, allWords, page, limit, descLength);
+
+        List<Product> products = productDao.searchProducts(query, allWords, page, limit, descLength);
+        Integer count = getProductCount();
+
+        return convertObjects(products, count);
     }
 
     public Product getProduct(int id) {
         return productDao.getProduct(id);
     }
 
-    public List<Product> getProductsInCategory(int categoryId, int page, int limit, int descLength) {
+    public String getProductsInCategory(int categoryId, int page, int limit, int descLength) {
         page = page -1;
         if (page > 0) {page = (page * limit);}
-        return productDao.getProductsInCategory(categoryId, page, limit, descLength);
+
+        List<Product> products = productDao.getProductsInCategory(categoryId, page, limit, descLength);
+        Integer count = getProductCount();
+
+        return convertObjects(products, count);
     }
 
-    public List<Product> getProductsInDepartment(int departmentId, int page, int limit, int descLength) {
+    public String getProductsInDepartment(int departmentId, int page, int limit, int descLength) {
         page = page -1;
         if (page > 0) {page = (page * limit);}
-        return productDao.getProductsInDepartment(departmentId, page, limit, descLength);
+
+        List<Product> products = productDao.getProductsInDepartment(departmentId, page, limit, descLength);
+        Integer count = getProductCount();
+
+        return convertObjects(products, count);
     }
 
     public Product getProductDetails(int id) {
