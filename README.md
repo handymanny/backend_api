@@ -24,25 +24,24 @@ This is my first project I am commiting to github, on here I am creating a backe
 		 - Attribute
 	 - Had my first problem with the program when I was creating the method that would return all products
 		 - I was trying to figure out how to return the propper object that would match the desired output
+		 - Tested out all of the endpoints to make sure I was getting desired response
 		 - I was able to fix this by changing this:
 ```
-	public List<Product> getAllProducts(int page, int limit, int descLength) {
+public List<Product> getAllProducts(int page, int limit, int descLength) {
         page = page -1;
         if (page > 0) {page = (page * limit);}
 
         return productDao.getAllProducts(page, limit, descLength);
-    }
-```
+}
 
-		 - To this
-```
-	public String getAllProducts(int page, int limit, int descLength) {
+// To this
+
+public String getAllProducts(int page, int limit, int descLength) {
         page = page -1;
         if (page > 0) {page = (page * limit);}
 
         List<Product> products = productDao.getAllProducts(page, limit, descLength);
         Integer count = getProductCount();
         return convertObjects(products, count);
-    }
+}
 ```
-	- Tested out all of the endpoints to make sure I was getting desired response
