@@ -45,3 +45,13 @@ public String getAllProducts(int page, int limit, int descLength) {
         return convertObjects(products, count);
 }
 ```
+
+### Day 3
+* On the third day of creation
+     - Created few more controller objects
+          - Customers
+          - Orders
+          - ShoppingCart
+     - Started to work on the implementation of security on the project
+     - Create some error handling flows given the predefined errors
+     
