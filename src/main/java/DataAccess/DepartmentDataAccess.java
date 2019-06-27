@@ -2,6 +2,7 @@ package DataAccess;
 
 import Dao.DepartmentDao;
 import Model.Department;
+import Exception.DepartmentNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -31,11 +32,15 @@ public class DepartmentDataAccess implements DepartmentDao {
 
     @Override
     public Department getDepartment(int id) {
-        final String sql = "{CALL catalog_get_department_details(?)}";
-        return jdbcTemplate.queryForObject(sql, new Object[]{id}, (resultSet, i) -> {
-           String name = resultSet.getString("name");
-           String desc = resultSet.getString("description");
-           return new Department(id, name, desc);
-        });
+        try {
+            final String sql = "{CALL catalog_get_department_details(?)}";
+            return jdbcTemplate.queryForObject(sql, new Object[]{id}, (resultSet, i) -> {
+                String name = resultSet.getString("name");
+                String desc = resultSet.getString("description");
+                return new Department(id, name, desc);
+            });
+        } catch (Exception e) {
+            throw new DepartmentNotFoundException();
+        }
     }
 }

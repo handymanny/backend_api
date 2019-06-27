@@ -53,5 +53,11 @@ public String getAllProducts(int page, int limit, int descLength) {
           - Orders
           - ShoppingCart
      - Started to work on the implementation of security on the project
+         - Created the token handlers and authentication classes and methods
+           to create the tokens and handle when I need authentication
+           - Using a basic user, pass account for right now
+           - Will implement database accounts tomorrow
      - Create some error handling flows given the predefined errors
-     
+         - Created the global exception handler
+               - This class will handle all exceptions generated from the controlers
+         - Created the category and department exception objects

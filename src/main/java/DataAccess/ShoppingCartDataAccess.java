@@ -1,7 +1,7 @@
-package Dao;
+package DataAccess;
 
+import Dao.ShoppingCartDao;
 import Model.CartProduct;
-import Model.Product;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
@@ -10,7 +10,7 @@ import java.util.HashMap;
 import java.util.List;
 
 @Repository
-public class ShoppingCartDataAccess implements ShoppingCartDao{
+public class ShoppingCartDataAccess implements ShoppingCartDao {
 
     private JdbcTemplate jdbcTemplate;
 

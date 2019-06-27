@@ -10,7 +10,7 @@ import javax.sql.DataSource;
 
 
 @SpringBootApplication
-@ComponentScan(basePackages = {"Controller", "Service", "Model", "Dao", "DataAccess", "DataSource"})
+@ComponentScan(basePackages = {"Controller", "Service", "Model", "Dao", "DataAccess", "DataSource", "Security", "Exception"})
 public class Application {
 
     public static void main (String [] args) {

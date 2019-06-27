@@ -3,7 +3,9 @@ package Controller;
 import Model.Customer;
 import Service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -38,18 +40,18 @@ public class CustomerController {
     }
 
     @RequestMapping(value = "/customers", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
-    public Customer registerCustomer (@RequestParam("name") String name,
+    public ResponseEntity<String> registerCustomer (@RequestParam("name") String name,
                                       @RequestParam("email") String email,
                                       @RequestParam("password") String password) {
 
-        return customerService.registerCustomer(name, email, password);
+        return new ResponseEntity<>(customerService.registerCustomer(name, email, password), HttpStatus.OK);
     }
 
     @RequestMapping(value = "/customers/login", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)
-    public Customer loginCustomer (@RequestParam("email") String email,
+    public ResponseEntity<String> loginCustomer (@RequestParam("email") String email,
                                    @RequestParam("password") String password) {
 
-        return customerService.loginCustomer(email, password);
+        return new ResponseEntity<>(customerService.loginCustomer(email, password), HttpStatus.OK);
     }
 
     @RequestMapping(value = "/customers/facebook", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE)

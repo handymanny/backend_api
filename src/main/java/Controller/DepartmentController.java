@@ -27,7 +27,8 @@ public class DepartmentController {
     }
 
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
-    public Department getDepartment(@PathVariable("id") int id) {
+    public Department getDepartment(@PathVariable("id") Integer id) {
+
         return departmentService.getDepartment(id);
     }
 }
